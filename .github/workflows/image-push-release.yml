@@ -1,8 +1,8 @@
 name: Image push release
 on:
   push:
-    tags:
-      - v*
+    branches:
+      - main
 jobs:
   push-amd64:
     name: Image push/amd64
