@@ -1,5 +1,5 @@
 # This Dockerfile is used to build the image available on DockerHub
-FROM golang:1.19
+FROM golang:1.19 AS build
 
 WORKDIR /usr/src/cni-route-override
 ADD . .
